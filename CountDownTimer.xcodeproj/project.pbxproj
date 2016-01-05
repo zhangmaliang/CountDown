@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		18E8117A1C38C1EC00D2005B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E811791C38C1EC00D2005B /* AppDelegate.swift */; };
-		18E8117C1C38C1EC00D2005B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E8117B1C38C1EC00D2005B /* ViewController.swift */; };
 		18E8117F1C38C1EC00D2005B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18E8117D1C38C1EC00D2005B /* Main.storyboard */; };
 		18E811811C38C1EC00D2005B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18E811801C38C1EC00D2005B /* Assets.xcassets */; };
 		18E811841C38C1EC00D2005B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18E811821C38C1EC00D2005B /* LaunchScreen.storyboard */; };
 		18E8118F1C38C1EC00D2005B /* CountDownTimerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E8118E1C38C1EC00D2005B /* CountDownTimerTests.swift */; };
 		18E8119A1C38C1EC00D2005B /* CountDownTimerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E811991C38C1EC00D2005B /* CountDownTimerUITests.swift */; };
+		18E811A81C38C25200D2005B /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E811A71C38C25200D2005B /* TableViewController.swift */; };
+		18E811AA1C38C2AB00D2005B /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E811A91C38C2AB00D2005B /* TableViewCell.swift */; };
+		18E811AC1C38C9B600D2005B /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E811AB1C38C9B600D2005B /* Model.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +38,6 @@
 /* Begin PBXFileReference section */
 		18E811761C38C1EC00D2005B /* CountDownTimer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CountDownTimer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18E811791C38C1EC00D2005B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		18E8117B1C38C1EC00D2005B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		18E8117E1C38C1EC00D2005B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		18E811801C38C1EC00D2005B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		18E811831C38C1EC00D2005B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +48,9 @@
 		18E811951C38C1EC00D2005B /* CountDownTimerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CountDownTimerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		18E811991C38C1EC00D2005B /* CountDownTimerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountDownTimerUITests.swift; sourceTree = "<group>"; };
 		18E8119B1C38C1EC00D2005B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18E811A71C38C25200D2005B /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		18E811A91C38C2AB00D2005B /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		18E811AB1C38C9B600D2005B /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,7 +102,9 @@
 			isa = PBXGroup;
 			children = (
 				18E811791C38C1EC00D2005B /* AppDelegate.swift */,
-				18E8117B1C38C1EC00D2005B /* ViewController.swift */,
+				18E811A71C38C25200D2005B /* TableViewController.swift */,
+				18E811A91C38C2AB00D2005B /* TableViewCell.swift */,
+				18E811AB1C38C9B600D2005B /* Model.swift */,
 				18E8117D1C38C1EC00D2005B /* Main.storyboard */,
 				18E811801C38C1EC00D2005B /* Assets.xcassets */,
 				18E811821C38C1EC00D2005B /* LaunchScreen.storyboard */,
@@ -256,8 +262,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				18E8117C1C38C1EC00D2005B /* ViewController.swift in Sources */,
+				18E811AA1C38C2AB00D2005B /* TableViewCell.swift in Sources */,
 				18E8117A1C38C1EC00D2005B /* AppDelegate.swift in Sources */,
+				18E811A81C38C25200D2005B /* TableViewController.swift in Sources */,
+				18E811AC1C38C9B600D2005B /* Model.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
